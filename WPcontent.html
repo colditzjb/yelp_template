@@ -12,25 +12,37 @@
 <td>Search term:<br><select name="options" onchange="document.getElementById('displayframe').src = document.getElementsByName('url_')[0].value+'?'+this.options[this.selectedIndex].value">
   <option value="" selected="selected"> </option>
   <option value="q=hookah">Hookah</option>
+  <option value="q=smoke">Smoke</option>
   <option value="q=food">Food</option>
   <option value="q=beer">Beer</option>
   <option value="q=wine">Wine</option>
   <option value="q=alcohol">Alcohol</option>
   <option value="q=drink">Drink</option>
+  <option value="q=byob">BYOB</option>
   <option value="q=discount">Discount</option>
-  <option value="q=entertainment">Entertainment</option>
+  <option value="q=special">Special</option>
+  <option value="q=student">Student</option>
+  <option value="q=id">ID</option>
+  <option value="q=age">Age</option>
+  <option value="q=card">Card</option>
+  <option value="q=music">Music</option>
+  <option value="q=dance">Dance</option>
+  <option value="q=dancer">Dancer</option>
+  <option value="q=play">Play</option>
 </select></td>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td>&nbsp;&nbsp;<a title="0=No | 1=Yes | 99=NMI">buy:</a>&nbsp;&nbsp;<br>[abase form="2,update" table="template" elements="tobshop" fields="tobshop!'text 16;16'"]</td>
 <td>&nbsp;<a title="0=No | 1=Yes | 99=NMI">smoke:</a>&nbsp;<br>[abase form="update" table="template" elements="hookah" fields="hookah!'text 16;16'"]</td>
-<td>&nbsp;&nbsp;<a title="0=No | 1=Full | 2=Limited | 99=NMI">food:</a>&nbsp;&nbsp;<br>[abase form="update" table="template" elements="food" fields="food!'text 16;16'"]</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><a title="0=No | 1=Yes | 99=NMI">open:</a><br>[abase form="update" table="template" elements="open" fields="open!'text 16;16'"]</td>
+<td>&nbsp;&nbsp;<a title="0=No | 1=Limited | 2=Full | 99=NMI">food:</a>&nbsp;&nbsp;<br>[abase form="update" table="template" elements="food" fields="food!'text 16;16'"]</td>
 <td><a title="0=No | 1=Yes | 2=BYOB | 99=NMI">alcohol:</a><br>[abase form="update" table="template" elements="alcohol" fields="alcohol!'text 16;16'"]</td>
 <td><a title="0=No | 1=Yes | 2=Student | 99=NMI">discount:</a><br>[abase form="update" table="template" elements="disc_gen" fields="disc_gen!'text 16;16'"]</td>
 <td><a title="0=No | 1=Yes | 99=NMI">entertain:</a><br>[abase form="update" table="template" elements="entertain" fields="entertain!'text 16;16'"]</td>
 <td><a title="Entertainment types">ent_note:</a><br>[abase form="update" table="template" elements="ent_note" fields="ent_note!'text 240;16'"]</td>
-<td><a title="Minimum age">age:</a><br>[abase form="update" table="template" elements="age" fields="age!'text 16;16'"]</td>
 </tr></table><table cellspacing="0" cellpadding="0"><tr>
-<td><a title="Friday Hours: Copy from Yelp and remove extra spaces">hours_fri:</a><br>[abase form="update" table="template" elements="hours_fri" fields="hours_fri!'text 120;16'"]</td>
+<td><a title="Minimum age">age:</a><br>[abase form="update" table="template" elements="age" fields="age!'text 16;16'"]</td>
+<td><a title="Friday Hours: Copy from Yelp and remove extra spaces">hours_fri:</a><br>[abase form="update" table="template" elements="hours_fri" fields="hours_fri!'text 150;16'"]</td>
 <td><a href="javascript: void(0)" onclick="window.open(document.getElementsByName('url_')[0].value+'?sort_by=date_asc','displayframe')">rev_old:</a><br>[abase form="update" table="template" elements="rev_old" fields="rev_old!'date YY "/" mm "/" dd'"]</td>
 <td><a href="javascript: void(0)" onclick="window.open(document.getElementsByName('url_')[0].value+'?sort_by=date_desc','displayframe')">rev_new:</a><br>[abase form="update" table="template" elements="rev_new" fields="rev_new!'date YY "/" mm "/" dd'"]</td>
 <td><a title="Other notes">comment:</a><br>[abase form="3,update" table="template" elements="comment" fields="comment!'text 400;16'$Update Record" ack="red"]</td>
